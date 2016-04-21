@@ -6,5 +6,9 @@ List of members of Team37:
 =======
 - David Marben
 - Ain
+<<<<<<< HEAD
 >>>>>>> origin/master
 - Solomon
+=======
+- Solomon LIN
+>>>>>>> origin/master
