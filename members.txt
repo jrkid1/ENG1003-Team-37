@@ -1,10 +1,14 @@
 List of members of Team37:
 - Jake
 <<<<<<< HEAD
+<<<<<<< HEAD
 - David
 - Ain Yang
 =======
 - David Marben
+=======
+- Dave Marben
+>>>>>>> origin/master
 - Ain
 <<<<<<< HEAD
 >>>>>>> origin/master
