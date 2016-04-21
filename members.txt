@@ -1,5 +1,10 @@
 List of members of Team37:
 - Jake
 - Dave Marben
+<<<<<<< HEAD
 - Ain Yang
 - Solomon LIN
+=======
+- Ain
+- Solomon LIN
+>>>>>>> parent of 5fd1ff4... Revert "change 2"
