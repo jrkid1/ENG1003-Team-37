@@ -3,3 +3,4 @@ List of members of Team37:
 - Dave Marben
 - Sol
 - Ain
+- Trent
