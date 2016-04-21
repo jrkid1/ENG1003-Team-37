@@ -1,9 +1,5 @@
 List of members of Team37:
 - Jake
 - Dave Marben
-- Ain
-<<<<<<< HEAD
 - Sol
-=======
-- Solomon LIN
->>>>>>> parent of d53b7e1... PLS
+- Ain
