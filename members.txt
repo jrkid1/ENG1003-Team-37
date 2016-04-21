@@ -2,9 +2,4 @@ List of members of Team37:
 - Jake
 - Dave Marben
 - Ain
-<<<<<<< HEAD
-- Solomon
-=======
-- Solomon LIN
-
->>>>>>> parent of d4f4a32... FINAL COMMIT 2
+- Sol
