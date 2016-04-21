@@ -1,5 +1,9 @@
 List of members of Team37:
 - Jake
+<<<<<<< HEAD
 - Dave Marben
+=======
+- David
+>>>>>>> parent of bc38658... change 2
 - Ain
 - Solomon LIN
