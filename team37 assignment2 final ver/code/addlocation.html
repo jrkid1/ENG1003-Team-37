@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Weather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js"></script>
+        <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="css/weatherapp.css" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+        <link rel="stylesheet" type="text/css" href="css/weatherapp.css">
+        
+        <style>
+        
+         #map {
+            height: 400px;
+            width: 300px;
+        }
+            
+             
+        </style>
+    </head>
+  <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+              <button onclick="location.href = 'index.html';" class="mdl-layout-icon mdl-button mdl-js-button mdl-button--icon"> 
+                <i class="material-icons">arrow_back</i>
+              </button>
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title" id="headerBarTitle">Add Location</span>
+            </div>
+
+          </header>
+          <main class="mdl-layout__content">
+            <div class="content-grid mdl-grid">
+              <div class="mdl-cell">
+                  
+                  
+                  
+                <!--   Main page content here:   -->  
+                
+                <!-- Location text field -->
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="address" oninput="codeAddress()"> <!-- oninput function detects every letter user input -->
+                    <label class="mdl-textfield__label" for="address" >Add a Location</label>
+                  </div>
+                </form>
+                
+                <!-- Nickname text field -->
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="addNicknameField">
+                    <label class="mdl-textfield__label" for="addNicknameField">Add a Nickname</label>
+                  </div>
+                </form>
+                  
+                  
+<button class="mdl-button mdl-js-button mdl-button--raised" id = 'addLocationBtn' onclick="addLocation()"> <!-- save the location to the main page list -->
+  Add Location
+</button>
+        
+                   <!-- Map -->
+               
+                 <div id='map'></div>
+          
+                  
+                <!-- "Add Location" Button -->
+                
+              </div>
+            </div>
+          </main>    
+        </div>
+        <!--   JavaScript files:   -->
+      
+        <script src="js/locationWeatherCache.js"></script>
+        <script src="js/addlocationPage.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfpXnRVrL0uXKT_oTLah6zSm86rVq8vZc&callback=initMap"></script>
+       
+    </body>
+</html>

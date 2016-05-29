@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Weather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="css/weatherapp.css" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    </head>
+    
+        <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+              <button onclick="location.href = 'index.html';" class="mdl-layout-icon mdl-button mdl-js-button mdl-button--icon"> 
+                <i class="material-icons">arrow_back</i>
+              </button>
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title" id="headerBarTitle">View Location</span>
+            </div>
+          </header>
+          <main class="mdl-layout__content">
+            <div class="content-grid mdl-grid">
+              <div class="mdl-cell">
+                <!--   Main page content here:   -->  
+                    <style>
+                      #map {
+                        width: 300px;
+                        height: 300px;
+                      }
+                    </style>
+                    <div id="map"></div>
+                    <p style="width:300px">
+                <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="0" max="29" step="1" value = "29" tabindex="0" 
+         oninput="giveWeather(this.value)"  >
+                  </p>
+                  
+                    <p>
+                        <div id="displayWeather">Weather of <span id="message"></span></div> <div id="message"></div> <div id="colon"></div>
+                        <div id="displaySummary">Summary:<span id="summary"> </span></div><div id="summary"></div>
+                        <div id="displayMinTemp">Minimum temperature:<span id="minTemp"> </span></div><div id="minTemp"></div>
+                        <div id="displayMaxTemp">Maximum temperature:<span id="maxTemp"> </span></div><div id="maxTemp"></div>
+                        <div id="displayHumidity">Humidity:<span id="humidity"> </span></div><div id="humidity"></div>
+                        <div id="displayWindSpeed">Wind Speed:<span id="windSpeed"> </span></div><div id="windSpeed"></div>   
+                        <button class="mdl-button mdl-button--raised" onclick="removeLocation();history.go(-1)">REMOVE THIS LOCATION</button>
+                           
+                    </p>
+                  
+              </div>
+            </div>
+          </main>    
+        </div>
+        <!--   JavaScript files:   -->
+
+        <script src="js/locationWeatherCache.js"></script>
+         <script src="js/viewLocationPage.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initializeMap" async defer></script>
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"> </script>
+    </body>
+    
+</html>
